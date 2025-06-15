@@ -1,0 +1,10 @@
+digraph TestGraph1 {
+  1 [compute_size=102400000000, trans_size=128000, ram=1280000, result_size=1280]
+  2 [compute_size=25600000000, trans_size=64000, ram=1280000, result_size=640]
+  3 [compute_size=3200000000, trans_size=1024000, ram=320000, result_size=2560]
+  4 [compute_size=819200000000, trans_size=64000, ram=5120000, result_size=5120]
+  1 -> 2
+  1 -> 3
+  3 -> 4
+  2 -> 4
+}

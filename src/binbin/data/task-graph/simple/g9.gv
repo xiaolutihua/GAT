@@ -1,0 +1,25 @@
+digraph TestGraph9 {
+  1 [compute_size=12800000000, trans_size=64000, ram=1280000, result_size=6400]
+  2 [compute_size=25600000000, trans_size=64000, ram=1280000, result_size=6400]
+  3 [compute_size=51200000000, trans_size=64000, ram=1280000, result_size=6400]
+  4 [compute_size=1600000000, trans_size=1024000, ram=640000, result_size=6400]
+  5 [compute_size=12800000000, trans_size=64000, ram=1280000, result_size=6400]
+  6 [compute_size=12800000000, trans_size=64000, ram=1280000, result_size=6400]
+  7 [compute_size=12800000000, trans_size=64000, ram=1280000, result_size=6400]
+  8 [compute_size=12800000000, trans_size=64000, ram=1280000, result_size=6400]
+  9 [compute_size=12800000000, trans_size=64000, ram=1280000, result_size=6400]
+  1 -> 3
+  1 -> 4
+  2 -> 5
+  2 -> 9
+  3 -> 6
+  3 -> 8
+  4 -> 6
+  4 -> 7
+  4 -> 8
+  5 -> 8
+  5 -> 9
+  6 -> 9
+  7 -> 9
+  8 -> 9
+}

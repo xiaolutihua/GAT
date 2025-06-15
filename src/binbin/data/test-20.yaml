@@ -1,0 +1,34 @@
+devices:
+  iot: 4
+  fog: 2
+  cloud: 1
+spec:
+  iot:
+    core-count: 1
+    core-frequency: 1
+    memory-size: 512
+    sending-bandwidth: 128
+    receiving-bandwidth: 128
+  fog:
+    core-count: 2
+    core-frequency: 4
+    memory-size: 1024
+    sending-bandwidth: 512
+    receiving-bandwidth: 512
+  cloud:
+    core-count: 16
+    core-frequency: 12
+    memory-size: 8196
+    sending-bandwidth: 2048
+    receiving-bandwidth: 2048
+tasks:
+  graphs-path: task-graph/simple
+  cycles:
+    - 10000
+    - 20000
+    - 40000
+    - 80000
+latency:
+  iot2fog: 10
+  fog2cloud: 100
+  iot2cloud: 150
